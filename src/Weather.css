@@ -1,0 +1,116 @@
+/* Weather.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2980b9, #6dd5fa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.app { 
+    background-image: url();
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease;
+}
+
+.app.warm {
+    background-image: url();
+    transition: 0.4 ease;
+}
+.heading {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-bar {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+    border-bottom: 1px solid #3498db;
+}
+
+.location-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.location {
+    font-size: 2rem;
+    color: white;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 5px;
+}
+
+.weather {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Add the following styles for the loading state */
+.loading {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Add the following styles for the temperature display */
+.temperature-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.temperature-box:hover {
+    transform: scale(1.1);
+}
+
+.temperature {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.temperature:hover {
+    color: #3498db;
+}
